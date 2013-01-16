@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+a {text-decoration : none;}
+
+
+/*
+    Estilo geral
+*/
+body {
+    background: #fff url('../img/wood.jpg') no-repeat top center;
+    color : #000;
+    font-family : Helvetica,sans-serif;
+    font-size : 10pt;
+    overflow: hidden;
+    text-align : left;
+}
+
+html, body {
+    height: 100%;
+}
+
+#geral {
+    color : #000;
+    min-height : 100%;
+    margin : auto;
+    position : relative;
+}
+
+#topo {
+    background: #555; 
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,.5);
+    height : 40px;
+    padding : 0 0 0 0;   
+    text-align: center;
+    z-index: 999;
+}
+
+#titulo {
+    color : #eaeaea;
+    font-size: 15pt;
+    font-weight : bolder;
+    padding : 3px;
+    line-height: 40px;
+    text-shadow: 0px 0px 6px rgba(255,255,255,.7);
+    top : 5px;
+}
+
+#barra_menus {
+    background: #eaeaea;
+    box-shadow: 5px 0px 5px rgba(0,0,0,.5);
+    height: 100%;
+    width:270px;
+    position: fixed;
+}
+
+nav li {
+    border-bottom: 1px dotted #ccc;
+    color: #555;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav li.ativo {
+    background: #4876FF;
+    border: 1px inset;
+    color: #fff;
+}
+
+nav li a {
+    color: #555;
+    float: right;
+}
+
+#conteudo {
+    color : #000;
+    padding : 20px 0px 0px 270px;
+}
+
+/* 
+    Formulário de tarefa;
+*/
+.formulario {
+    padding: 20px;
+}
+#tarefa {
+    background: rgba(0,0,0,.3);
+    border: 1px inset #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5) inset;
+    color: #fff;
+    margin:3px;
+    padding: 10px 20px;
+    text-shadow: 2px 2px 2px rgb(0,0,0);
+    width: 90%;
+}
+
+/* 
+    Listagem de tarefas;
+*/
+.listaTarefas {
+    list-style: none;
+    overflow: auto;
+    max-height: 500px;
+    padding: 20px;
+}
+
+.listaTarefas li {
+    background: #eaeaea;
+    border: 1px outset rgba(255,255,255,.9);
+    border-radius: 5px;
+    color: #555;
+    margin: 2px;
+    padding: 10px;
+}
+
+.listaTarefas li a {
+    float: right;
+}
